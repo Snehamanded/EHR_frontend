@@ -1,0 +1,1 @@
+export { PharmacyDashboard } from './PharmacyDashboard';

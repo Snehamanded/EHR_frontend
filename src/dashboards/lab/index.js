@@ -1,0 +1,1 @@
+export { LabDashboard } from './LabDashboard';

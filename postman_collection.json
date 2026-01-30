@@ -1,0 +1,6718 @@
+{
+	"info": {
+		"_postman_id": "e425ae95-05d0-4212-9588-e0a2302b117d",
+		"name": "Medora API",
+		"description": "Postman collection for EHR API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10333487"
+	},
+	"item": [
+		{
+			"name": "Activity Log",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/activitylog/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"activitylog",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for activityLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/activitylog/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"activitylog",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for activityLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/activitylog/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"activitylog",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for activityLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/activitylog/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"activitylog",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for activityLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/activitylog/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"activitylog",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for activityLogController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for adminController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/admin/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for adminController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/admin/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for adminController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for adminController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admin/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admin",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for adminController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin Stat",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/adminstat/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"adminstat",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for adminStatController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/adminstat/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"adminstat",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for adminStatController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/adminstat/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"adminstat",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for adminStatController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/adminstat/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"adminstat",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for adminStatController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/adminstat/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"adminstat",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for adminStatController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin Type",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admintype/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admintype",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for adminTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/admintype/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admintype",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for adminTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/admintype/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admintype",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for adminTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admintype/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admintype",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for adminTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/admintype/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"admintype",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for adminTypeController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Announcement",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/announcement/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"announcement",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for announcementController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/announcement/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"announcement",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for announcementController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/announcement/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"announcement",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for announcementController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/announcement/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"announcement",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for announcementController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/announcement/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"announcement",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for announcementController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Appointment",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/appointment/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for appointmentController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/appointment/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for appointmentController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/appointment/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for appointmentController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/appointment/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for appointmentController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/appointment/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"appointment",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for appointmentController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Audit Log",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/auditlog/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auditlog",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for auditLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/auditlog/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auditlog",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for auditLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/auditlog/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auditlog",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for auditLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/auditlog/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auditlog",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for auditLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/auditlog/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"auditlog",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for auditLogController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Availability",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/availability/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"availability",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for availabilityController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/availability/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"availability",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for availabilityController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/availability/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"availability",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for availabilityController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/availability/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"availability",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for availabilityController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/availability/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"availability",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for availabilityController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Billing Record",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for billingRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/billingrecord/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"billingrecord",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for billingRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/billingrecord/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"billingrecord",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for billingRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/billingrecord/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"billingrecord",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for billingRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/billingrecord/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"billingrecord",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for billingRecordController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Call",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/call/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"call",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/call/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"call",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/call/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"call",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/call/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"call",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/call/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"call",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for categoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/category/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for categoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/category/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for categoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/category/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for categoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/category/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for categoryController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Chat Thread",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/chatthread/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"chatthread",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for chatThreadController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/chatthread/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"chatthread",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for chatThreadController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/chatthread/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"chatthread",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for chatThreadController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/chatthread/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"chatthread",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for chatThreadController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/chatthread/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"chatthread",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for chatThreadController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Critical Alert",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/criticalalert/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"criticalalert",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for criticalAlertController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/criticalalert/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"criticalalert",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for criticalAlertController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/criticalalert/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"criticalalert",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for criticalAlertController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/criticalalert/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"criticalalert",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for criticalAlertController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/criticalalert/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"criticalalert",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for criticalAlertController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Doctor",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/doctor/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"doctor",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for doctorController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/doctor/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"doctor",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for doctorController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/doctor/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"doctor",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for doctorController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/doctor/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"doctor",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for doctorController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/doctor/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"doctor",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for doctorController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Document",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/document/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"document",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for documentController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/document/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"document",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for documentController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/document/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"document",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for documentController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/document/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"document",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for documentController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/document/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"document",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for documentController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Document Type",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/documenttype/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"documenttype",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for documentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/documenttype/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"documenttype",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for documentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/documenttype/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"documenttype",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for documentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/documenttype/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"documenttype",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for documentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/documenttype/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"documenttype",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for documentTypeController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Emergency Contact",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/emergencycontact/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emergencycontact",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for emergencyContactController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/emergencycontact/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emergencycontact",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for emergencyContactController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/emergencycontact/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emergencycontact",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for emergencyContactController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/emergencycontact/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emergencycontact",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for emergencyContactController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/emergencycontact/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"emergencycontact",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for emergencyContactController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Engagement Log",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/engagementlog/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"engagementlog",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for engagementLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/engagementlog/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"engagementlog",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for engagementLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/engagementlog/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"engagementlog",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for engagementLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/engagementlog/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"engagementlog",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for engagementLogController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/engagementlog/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"engagementlog",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for engagementLogController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Faq",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/faq/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"faq",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for faqController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/faq/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"faq",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for faqController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/faq/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"faq",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for faqController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id"
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for faqController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/faq/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"faq",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for faqController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fcm",
+			"item": [
+				{
+					"name": "POST /save-token",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/fcm/save-token",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"fcm",
+								"save-token"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//save-token\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				},
+				{
+					"name": "POST /send-single",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/fcm/send-single",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"fcm",
+								"send-single"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//send-single\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				},
+				{
+					"name": "POST /send-bulk",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/fcm/send-bulk",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"fcm",
+								"send-bulk"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//send-bulk\nAuto-generated description for authMiddleware"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Feedback",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/feedback/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"feedback",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for feedbackController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/feedback/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"feedback",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for feedbackController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/feedback/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"feedback",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for feedbackController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/feedback/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"feedback",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for feedbackController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/feedback/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"feedback",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for feedbackController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gemini",
+			"item": [
+				{
+					"name": "POST /analyze",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/gemini/analyze",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"gemini",
+								"analyze"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//analyze\nAuto-generated description for geminiController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hospital",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/hospital/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"hospital",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for hospitalController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/hospital/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"hospital",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for hospitalController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/hospital/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"hospital",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for hospitalController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/hospital/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"hospital",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for hospitalController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/hospital/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"hospital",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for hospitalController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Huggingface",
+			"item": [
+				{
+					"name": "POST /analyze",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/huggingface/analyze",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"huggingface",
+								"analyze"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//analyze\nAuto-generated description for huggingfaceController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Insurance Record",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/insurancerecord/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insurancerecord",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for insuranceRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/insurancerecord/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insurancerecord",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for insuranceRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/insurancerecord/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insurancerecord",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for insuranceRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/insurancerecord/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insurancerecord",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for insuranceRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/insruancerecord/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"insruancerecord",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for insuranceRecordController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lab Order",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/laborder/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"laborder",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for labOrderController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/laborder/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"laborder",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for labOrderController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/laborder/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"laborder",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for labOrderController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/laborder/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"laborder",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for labOrderController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/laborder/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"laborder",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for labOrderController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medical Record",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/medicalrecord/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicalrecord",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for medicalRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/medicalrecord/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicalrecord",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for medicalRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/medicalrecord/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicalrecord",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for medicalRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/medicalrecord/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicalrecord",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for medicalRecordController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/medicalrecord/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicalrecord",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for medicalRecordController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicine",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/medicine/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicine",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for medicineController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/medicine/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicine",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for medicineController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/medicine/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicine",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for medicineController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/medicine/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicine",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for medicineController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/medicine/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"medicine",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for medicineController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mode",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/mode/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mode",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for modeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/mode/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mode",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for modeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/mode/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mode",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for modeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/mode/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mode",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for modeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/mode/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"mode",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for modeController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/notification/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notification",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for notificationController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/notification/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notification",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for notificationController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/notification/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notification",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for notificationController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/notification/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notification",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for notificationController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/notification/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notification",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for notificationController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Notification Type",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/notificationtype/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notificationtype",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for notificationTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/notificationtype/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notificationtype",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for notificationTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/notificationtype/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notificationtype",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for notificationTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/notificationtype/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notificationtype",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for notificationTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/notificationtype/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"notificationtype",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for notificationTypeController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/patient/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patient",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for patientController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/patient/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patient",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for patientController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/patient/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patient",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for patientController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/patient/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patient",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for patientController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/patient/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patient",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for patientController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Patient Type",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/patienttype/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patienttype",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for patientTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/patienttype/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patienttype",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for patientTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/patienttype/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patienttype",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for patientTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/patienttype/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patienttype",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for patientTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/patienttype/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"patienttype",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for patientTypeController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/payment/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for paymentController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/payment/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for paymentController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/payment/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for paymentController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/payment/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for paymentController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/payment/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"payment",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for paymentController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Payment Type",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/paymenttype/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"paymenttype",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for paymentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/paymenttype/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"paymenttype",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for paymentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/paymenttype/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"paymenttype",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for paymentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/paymenttype/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"paymenttype",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for paymentTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/paymenttype/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"paymenttype",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for paymentTypeController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Prescription",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/prescription/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prescription",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for prescriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/prescription/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prescription",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for prescriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/prescription/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prescription",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for prescriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/prescription/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prescription",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for prescriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/prescription/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"prescription",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for prescriptionController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/subscription/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for subscriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/subscription/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for subscriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/subscription/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for subscriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/subscription/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for subscriptionController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/subscription/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscription",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for subscriptionController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Subscription Type",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/subscriptiontype/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscriptiontype",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for subscriptionTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/subscriptiontype/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscriptiontype",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for subscriptionTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/subscriptiontype/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscriptiontype",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for subscriptionTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/subscriptiontype/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscriptiontype",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for subscriptionTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/subscriptiontype/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"subscriptiontype",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for subscriptionTypeController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Support Ticket",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/supportticket/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"supportticket",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for supportTicketController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/supportticket/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"supportticket",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for supportTicketController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/supportticket/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"supportticket",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for supportTicketController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/supportticket/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"supportticket",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for supportTicketController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/supportticket/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"supportticket",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for supportTicketController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Symptom Category",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/symptomcategory/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"symptomcategory",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for symptomCategoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/symptomcategory/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"symptomcategory",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for symptomCategoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/symptomcategory/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"symptomcategory",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for symptomCategoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/symptomcategory/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"symptomcategory",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for symptomCategoryController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/symptomcategory/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"symptomcategory",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for symptomCategoryController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for userController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/user/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for userController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/user/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for userController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for userController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/user/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for userController"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Type",
+			"item": [
+				{
+					"name": "POST /add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/usertype/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usertype",
+								"add"
+							]
+						},
+						"description": "**Method:** POST\n**URL:** {{host}}//add\nAuto-generated description for userTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/usertype/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usertype",
+								"list"
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list\nAuto-generated description for userTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "GET /list/:id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{host}}/api/v1/usertype/list/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usertype",
+								"list",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** GET\n**URL:** {{host}}//list/:id\nAuto-generated description for userTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /update/:id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/usertype/update/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usertype",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** PUT\n**URL:** {{host}}//update/:id\nAuto-generated description for userTypeController"
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /delete/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{host}}/api/v1/usertype/delete/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"usertype",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "**Method:** DELETE\n**URL:** {{host}}//delete/:id\nAuto-generated description for userTypeController"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
