@@ -16,6 +16,10 @@ function normalizeApiBaseUrl(url) {
 
 const API_BASE_URL = normalizeApiBaseUrl(rawBaseUrl);
 
+// Always log the API URL being used (for debugging)
+console.log('🚀 [API Service] Using API URL:', API_BASE_URL);
+console.log('🔧 [API Service] Environment variable VITE_API_BASE_URL:', import.meta.env.VITE_API_BASE_URL);
+
 // Error tracking for summary (development only)
 const errorTracker = {
   errors: [],
