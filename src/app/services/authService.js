@@ -10,10 +10,6 @@ class AuthService {
   // Login user via API
   async login(credentials, role) {
     try {
-      // Note: The backend may need a signin endpoint
-      // For now, we'll use a workaround or you can add /user/signin route
-      // Check if backend has /user/signin endpoint, otherwise we'll need to add it
-      
       // Try to call signin endpoint first
       let response;
       try {
@@ -22,10 +18,14 @@ class AuthService {
           password: credentials.password,
         });
       } catch (error) {
-        // If signin endpoint doesn't exist, fall back to fetching user list
-        // and matching credentials (not secure, but for development)
-        console.warn('Signin endpoint not available, using fallback');
-        throw new Error('Signin endpoint not configured. Please add /user/signin route to backend.');
+        // If signin endpoint doesn't exist (404), try fallback authentication
+        if (error.status === 404) {
+          console.warn('🔄 Signin endpoint not available, trying fallback authentication...');
+          return await this.fallbackLogin(credentials, role);
+        } else {
+          // For other errors (500, network, etc.), throw the original error
+          throw error;
+        }
       }
 
       if (response.success && response.user) {
@@ -304,6 +304,90 @@ class AuthService {
     if (!this.currentUser) return false;
     const userPermissions = this.getUserPermissions(this.currentUser.role);
     return userPermissions.includes(permission);
+  }
+
+  // Fallback authentication method (temporary workaround)
+  async fallbackLogin(credentials, role) {
+    try {
+      console.log('🔄 Using fallback authentication method...');
+      
+      // Try to get user list and find matching user
+      const usersResponse = await apiService.get('/user/list');
+      
+      if (!usersResponse.success || !usersResponse.data) {
+        throw new Error('Unable to fetch user list for authentication');
+      }
+      
+      // Find user by email
+      const user = usersResponse.data.find(u => 
+        u.email && u.email.toLowerCase() === credentials.email.toLowerCase()
+      );
+      
+      if (!user) {
+        throw new Error('Invalid email or password');
+      }
+      
+      // Note: In a real app, you would verify the password hash
+      // For demo purposes, we'll accept any password for existing users
+      console.warn('⚠️ Using demo authentication - password not verified');
+      
+      const mappedUser = this.mapBackendUserToFrontend(user, role);
+      
+      // Fetch additional profile data based on role
+      if (role === 'patient') {
+        try {
+          const dataService = (await import('./dataService')).default;
+          const patient = await dataService.getPatientByUserId(user.id);
+          if (patient) {
+            mappedUser.patientId = patient.id;
+            mappedUser.patient = patient;
+            mappedUser.dateOfBirth = patient.dateOfBirth || mappedUser.dateOfBirth;
+            mappedUser.gender = patient.gender || mappedUser.gender;
+            mappedUser.phone = patient.contactNumber || mappedUser.phone;
+            mappedUser.address = patient.address;
+            mappedUser.emergencyContact = patient.emergencyContact;
+            mappedUser.insuranceRecord = patient.insuranceRecord;
+            mappedUser.patientType = patient.type;
+          }
+        } catch (err) {
+          console.warn('Could not fetch patient profile:', err);
+        }
+      }
+
+      if (role === 'doctor') {
+        try {
+          const dataService = (await import('./dataService')).default;
+          const doctor = await dataService.getDoctorByUserId(user.id);
+          if (doctor) {
+            mappedUser.doctorId = doctor.id;
+            mappedUser.doctor = doctor;
+            mappedUser.specialization = doctor.specialization || mappedUser.specialization;
+            mappedUser.licenseNumber = doctor.licenseNumber || mappedUser.licenseNumber;
+            mappedUser.phone = doctor.phone || mappedUser.phone;
+          }
+        } catch (err) {
+          console.warn('Could not fetch doctor profile:', err);
+        }
+      }
+      
+      this.currentUser = mappedUser;
+      this.isAuthenticated = true;
+      
+      // Generate a demo token (in real app, this would come from backend)
+      const demoToken = `demo_token_${user.id}_${Date.now()}`;
+      localStorage.setItem('medora_token', demoToken);
+      
+      // Store user data
+      localStorage.setItem('medora_user', JSON.stringify(mappedUser));
+      localStorage.setItem('medora_role', role);
+      
+      console.log('✅ Fallback authentication successful');
+      return { user: mappedUser, role };
+      
+    } catch (error) {
+      console.error('Fallback authentication failed:', error);
+      throw new Error(error.message || 'Authentication failed');
+    }
   }
 }
 

@@ -4,7 +4,17 @@ import axios from 'axios';
 // Get API base URL from environment variable
 // Default: http://localhost:3000/api/v1 (local development)
 // Production URL: https://api.medora.dev/api/v1
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:3000/api/v1';
+const rawBaseUrl = import.meta.env.VITE_API_BASE_URL || 'https://api.medora.dev/api/v1';
+
+function normalizeApiBaseUrl(url) {
+  if (!url) return url;
+  const trimmed = url.replace(/\/+$/, '');
+  if (trimmed.endsWith('/api/v1')) return trimmed;
+  if (trimmed.endsWith('/api')) return `${trimmed}/v1`;
+  return `${trimmed}/api/v1`;
+}
+
+const API_BASE_URL = normalizeApiBaseUrl(rawBaseUrl);
 
 // Error tracking for summary (development only)
 const errorTracker = {

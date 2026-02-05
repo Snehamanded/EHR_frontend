@@ -3,6 +3,7 @@ import { AuthLayout } from './AuthLayout';
 import { RoleSelector } from './RoleSelector';
 import { LoginForm } from './LoginForm';
 import { RegisterForm } from './RegisterForm';
+import { ApiErrorDisplay } from '@/app/components/common/ApiErrorDisplay';
 
 export function AuthPage({ onAuthenticated }) {
   const [currentView, setCurrentView] = useState('roleSelector'); // 'roleSelector', 'login', 'register'
@@ -33,7 +34,8 @@ export function AuthPage({ onAuthenticated }) {
       // Login successful - redirect to dashboard
       onAuthenticated(user, role);
     } catch (err) {
-      setError(err.message || 'Invalid email or password');
+      console.error('Login error:', err);
+      setError(err);
     } finally {
       setLoading(false);
     }
@@ -56,11 +58,17 @@ export function AuthPage({ onAuthenticated }) {
       setError(null);
       setCurrentView('login');
     } catch (err) {
-      setError(err.message || 'Registration failed. Please try again.');
+      console.error('Registration error:', err);
+      setError(err);
       setSuccessMessage(null);
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleRetry = () => {
+    setError(null);
+    setSuccessMessage(null);
   };
 
   const handleSwitchToRegister = () => {
@@ -118,12 +126,17 @@ export function AuthPage({ onAuthenticated }) {
             <p className="text-sm text-green-700 font-medium">{successMessage}</p>
           </div>
         )}
+        {error && (
+          <div className="mb-4">
+            <ApiErrorDisplay error={error} onRetry={handleRetry} />
+          </div>
+        )}
         <LoginForm
           role={selectedRole}
           onLogin={handleLogin}
           onSwitchToRegister={handleSwitchToRegister}
           loading={loading}
-          error={error}
+          error={null} // We're handling errors above now
         />
         <div className="mt-4 text-center">
           <button
@@ -143,12 +156,17 @@ export function AuthPage({ onAuthenticated }) {
         title={`${getRoleDisplayName(selectedRole)} Registration`}
         subtitle="Create your account to get started"
       >
+        {error && (
+          <div className="mb-4">
+            <ApiErrorDisplay error={error} onRetry={handleRetry} />
+          </div>
+        )}
         <RegisterForm
           role={selectedRole}
           onRegister={handleRegister}
           onSwitchToLogin={handleSwitchToLogin}
           loading={loading}
-          error={error}
+          error={null} // We're handling errors above now
         />
         <div className="mt-4 text-center">
           <button

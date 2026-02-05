@@ -13,6 +13,8 @@ import { AuthPage } from '@/app/components/auth';
 import { Button } from '@/app/components/ui/button';
 import { LogOut } from 'lucide-react';
 import authService from '@/app/services/authService';
+import ErrorBoundary from '@/app/components/common/ErrorBoundary';
+import { DebugPanel } from '@/app/components/debug/DebugPanel';
 import { Toaster } from '@/app/components/ui/sonner';
 
 function AppContent() {
@@ -63,29 +65,34 @@ function AppContent() {
 
   // Render selected dashboard with logout button
   return (
-    <div className="relative">
-      <Toaster />
-      {/* Logout Button - Fixed Position */}
-      <div className="fixed top-4 right-4 z-50">
-        <Button
-          variant="outline"
-          onClick={handleLogout}
-          className="bg-white shadow-lg"
-        >
-          <LogOut className="h-4 w-4 mr-2" />
-          Logout
-        </Button>
-      </div>
+    <ErrorBoundary>
+      <div className="relative">
+        <Toaster />
+        {/* Logout Button - Fixed Position */}
+        <div className="fixed top-4 right-4 z-50">
+          <Button
+            variant="outline"
+            onClick={handleLogout}
+            className="bg-white shadow-lg"
+          >
+            <LogOut className="h-4 w-4 mr-2" />
+            Logout
+          </Button>
+        </div>
 
-      {/* Render appropriate dashboard based on role */}
-      {selectedRole === 'patient' && <PatientDashboard userId={currentUser?.id} />}
-      {selectedRole === 'doctor' && <DoctorDashboard userId={currentUser?.id} />}
-      {selectedRole === 'staff' && <StaffDashboard userId={currentUser?.id} />}
-      {selectedRole === 'lab' && <LabDashboard userId={currentUser?.id} />}
-      {selectedRole === 'pharmacy' && <PharmacyDashboard userId={currentUser?.id} />}
-      {selectedRole === 'receptionist' && <ReceptionistDashboard userId={currentUser?.id} />}
-      {selectedRole === 'admin' && <AdminDashboard userId={currentUser?.id} />}
-    </div>
+        {/* Render appropriate dashboard based on role */}
+        {selectedRole === 'patient' && <PatientDashboard userId={currentUser?.id} />}
+        {selectedRole === 'doctor' && <DoctorDashboard userId={currentUser?.id} />}
+        {selectedRole === 'staff' && <StaffDashboard userId={currentUser?.id} />}
+        {selectedRole === 'lab' && <LabDashboard userId={currentUser?.id} />}
+        {selectedRole === 'pharmacy' && <PharmacyDashboard userId={currentUser?.id} />}
+        {selectedRole === 'receptionist' && <ReceptionistDashboard userId={currentUser?.id} />}
+        {selectedRole === 'admin' && <AdminDashboard userId={currentUser?.id} />}
+
+        {/* Debug Panel (only in development) */}
+        <DebugPanel />
+      </div>
+    </ErrorBoundary>
   );
 }
 
